@@ -19,34 +19,70 @@ html {
 }
 
 body {
+  background: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   padding: 9.2rem 1.44rem 5.25rem;
 }
 
 .card {
   width: 328px;
   height: 600px;
-  border: solid 2px black;
   border-radius: 25px;
   padding: 8.31rem 1rem 3rem 1rem;
+  background-color: whitesmoke;
+}
+
+.leftsvg {
+  position: absolute;
+  transform: translateY(-240px);
+  z-index: 0;
+}
+
+#box-shadow {
+  position: absolute;
+  z-index: 1;
+  transform: translate(-240px, 110px);
 }
 
 .faq h2 {
   text-align: center;
   font-family: "Kumbh Bold";
   font-size: var(--title);
-  font-weight: 500;
+  font-weight: 600;
   padding-bottom: 1.8rem;
   color: hsl(238, 29%, 16%);
 }
 
-.question h3 {
-  font-family: "Kumbh Regular";
-  font-size: 1rem;
-  font-weight: 300;
-  color: hsl(237, 12%, 33%);
+.question {
+  display: flex;
+  width: 280px;
+  height: 100px;
 }
 
-.question h3:hover {
+.arrow {
+  order: 2;
+  background-image: url(./images/icon-arrow-down.svg);
+  width: 10px;
+  height: 8px;
+  position: absolute;
+  transform: translateY(5px);
+  right: 15%;
+}
+
+.QA {
+  width: 260px;
+  height: 61px;
+}
+
+.question a {
+  font-family: "Kumbh Regular";
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: hsl(237, 12%, 33%);
+  text-decoration: none;
+  order: 1;
+}
+
+.question a:hover {
   color: hsl(14, 88%, 65%);
 }
 
@@ -55,6 +91,11 @@ body {
   font-size: 0.75rem;
   color: hsl(240, 6%, 50%);
   padding: 0.5rem 0rem 1rem 0rem;
+}
+
+.answer {
+  width: 100%;
+  display: none;
 }
 
 .faq hr {
