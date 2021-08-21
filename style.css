@@ -25,7 +25,7 @@ body {
 
 .card {
   width: 328px;
-  height: 600px;
+  height: 500px;
   border-radius: 25px;
   padding: 8.31rem 1rem 3rem 1rem;
   background-color: whitesmoke;
@@ -55,7 +55,6 @@ body {
 .question {
   display: flex;
   width: 280px;
-  height: 100px;
 }
 
 .arrow {
@@ -70,7 +69,6 @@ body {
 
 .QA {
   width: 260px;
-  height: 61px;
 }
 
 .question a {
@@ -93,8 +91,7 @@ body {
   padding: 0.5rem 0rem 1rem 0rem;
 }
 
-.answer {
-  width: 100%;
+.QA div {
   display: none;
 }
 
@@ -102,13 +99,16 @@ body {
   border: 0;
   border-top: 1px solid hsl(240, 5%, 91%);
   height: 0;
-  padding-bottom: 1rem;
+  margin: 1rem 0rem 1rem 0rem;
+  width: 95%;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: hsl(240, 4%, 95%);
 }
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(240, 4%, 95%);
 }
