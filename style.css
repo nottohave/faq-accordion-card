@@ -112,3 +112,21 @@ body {
 .attribution a {
   color: hsl(240, 4%, 95%);
 }
+
+@media screen and (min-width: 955px) {
+  .card {
+    width: 919px;
+    height: 507px;
+    display: flex;
+    position: relative;
+  }
+  .leftsvg {
+    position: relative;
+    transform: none;
+  }
+
+  #illustration {
+    width: 389px;
+    height: 363px;
+  }
+}
