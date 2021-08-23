@@ -16,7 +16,7 @@ var hrMargin5 = document.querySelector("#pageHr5");
 
 function displayMembers() {
     if (members.style.display === "none") {
-        hrMargin.style.margin = "0rem";
+        hrMargin2.style.margin = "0rem 0rem 1rem 0rem";
         members.style.display = "block";
     } else {
         members.style.display = "none";
@@ -25,7 +25,7 @@ function displayMembers() {
 }
 function displayMaximum() {
     if (mamximum.style.display === "none") {
-        hrMargin2.style.margin = "0rem";
+        hrMargin2.style.margin = "0rem 0rem 1rem 0rem";
         mamximum.style.display = "block";
     } else {
         mamximum.style.display = "none";
