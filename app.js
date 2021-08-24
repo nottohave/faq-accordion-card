@@ -1,3 +1,4 @@
+// working on active element, tune in tmr
 var members = document.querySelector(".members");
 var hrMargin = document.querySelector("#pageHr1");
 
