@@ -65,6 +65,7 @@ body {
   width: 280px;
 }
 
+button,
 .arrow {
   order: 2;
   background-image: url(./images/icon-arrow-down.svg);
@@ -73,6 +74,15 @@ body {
   position: absolute;
   transform: translateY(5px);
   right: 15%;
+  border: none;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.active {
+  background-color: hsl(14, 88%, 65%);
 }
 
 .QA {
