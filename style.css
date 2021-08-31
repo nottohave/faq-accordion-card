@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* import fonts */
 @font-face {
   font-family: "Kumbh Regular";
   src: url(./fonts/KumbhSans-Regular.ttf);
@@ -16,10 +17,14 @@
 
 html {
   --title: calc(1.625rem + 1vw);
+  height: auto;
 }
 
+
+/* Mobile-view */
 body {
   background: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-repeat: no-repeat;
   padding: 9.2rem 1.44rem 5.25rem;
 }
 
@@ -31,6 +36,7 @@ body {
   background-color: whitesmoke;
 }
 
+/* left side card */
 .desktop-box {
   display: none;
 }
@@ -51,6 +57,7 @@ body {
   transform: translate(-240px, 110px);
 }
 
+/* right side FAQ */
 .faq h2 {
   text-align: center;
   font-family: "Kumbh Bold";
@@ -60,36 +67,13 @@ body {
   color: hsl(238, 29%, 16%);
 }
 
+.question-container {
+  width: 100%;
+}
+
 .question {
   display: flex;
-  width: 280px;
-}
-
-button,
-.arrow {
-  order: 2;
-  background-image: url(./images/icon-arrow-down.svg);
-  width: 10px;
-  height: 8px;
-  position: absolute;
-  transform: translateY(5px);
-  right: 15%;
-  border: none;
-}
-
-details{
-}
-
-.arrow:hover {
-  cursor: pointer;
-}
-
-.active {
-  background-color: hsl(14, 88%, 65%);
-}
-
-.QA {
-  width: 260px;
+  justify-content: space-between;
 }
 
 .question a {
@@ -98,22 +82,38 @@ details{
   font-weight: 300;
   color: hsl(237, 12%, 33%);
   text-decoration: none;
-  order: 1;
+}
+
+.question button {
+  align-self: center;
+  background-image: url(./images/icon-arrow-down.svg);
+  width: 10px;
+  height: 8px;
+  right: 15%;
+  border: none;
+}
+
+.question a, .question button:hover {
+  cursor: pointer;
 }
 
 .question a:hover {
   color: hsl(14, 88%, 65%);
 }
 
-.question p {
+span {
+  display: none;
+}
+
+.active {
+  background-color: hsl(14, 88%, 65%);
+}
+
+span p {
   font-family: "Kumbh Regular";
   font-size: 0.75rem;
   color: hsl(240, 6%, 50%);
   padding: 0.5rem 0rem 1rem 0rem;
-}
-
-.QA div {
-  display: none;
 }
 
 .faq hr {
@@ -121,7 +121,7 @@ details{
   border-top: 1px solid hsl(240, 5%, 91%);
   height: 0;
   margin: 1rem 0rem 1rem 0rem;
-  width: 95%;
+  width: 100%;
 }
 
 .attribution {
@@ -134,7 +134,8 @@ details{
   color: hsl(240, 4%, 95%);
 }
 
-@media screen and (min-width: 955px) {
+/* desktop view */
+@media screen and (min-width: 1170px) {
   body {
     padding: 8.25rem 15rem;
   }
@@ -178,13 +179,7 @@ details{
     padding-bottom: 2.2rem;
   }
 
-  .question {
-    width: 320px;
-  }
-  .arrow {
-    transform: translate(-11rem, 5px);
-  }
-  .QA {
-    width: auto;
+  .question-container {
+    width: 95%;
   }
 }

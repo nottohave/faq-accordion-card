@@ -1,10 +1,3 @@
-// make an if statement to see if you can check for a button that 
-// has the onlick event that has active class
-// rethink html design, make 3 buttons and icons.
-// click, active, display block. Click again, display none
-// 3 active btn check on the fourth button will add
-// padding to the end. Same with the last qa
-var array = [1, 2, 3, 4];
 var buttons = document.querySelectorAll("button");
 var activeBtn = document.getElementsByClassName("arrow active");
 
