@@ -71,6 +71,7 @@ body {
   width: 100%;
 }
 
+/* arrow down buttons */
 .question {
   display: flex;
   justify-content: space-between;
@@ -82,6 +83,12 @@ body {
   font-weight: 300;
   color: hsl(237, 12%, 33%);
   text-decoration: none;
+}
+
+.question1a:focus {
+  font-family: "Kumbh Bold";
+  font-weight: 500;
+
 }
 
 .question button {
@@ -101,12 +108,10 @@ body {
   color: hsl(14, 88%, 65%);
 }
 
+
+/* answer for each question */
 span {
   display: none;
-}
-
-.active {
-  background-color: hsl(14, 88%, 65%);
 }
 
 span p {
@@ -116,6 +121,7 @@ span p {
   padding: 0.5rem 0rem 1rem 0rem;
 }
 
+/* Thematic break */
 .faq hr {
   border: 0;
   border-top: 1px solid hsl(240, 5%, 91%);
