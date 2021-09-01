@@ -85,10 +85,9 @@ body {
   text-decoration: none;
 }
 
-.question1a:focus {
+.question a:focus {
   font-family: "Kumbh Bold";
-  font-weight: 500;
-
+  font-weight: 400;
 }
 
 .question button {
