@@ -7,13 +7,6 @@ var answer3 = document.querySelector(".answer3");
 var answer4 = document.querySelector(".answer4");
 var answer5 = document.querySelector(".answer5");
 
-// Declare variables for answer to reset padding upon click.
-var answer1child = document.querySelector(".child1");
-var answer2child = document.querySelector(".child2");
-var answer3child = document.querySelector(".child3");
-var answer4child = document.querySelector(".child4");
-var answer5child = document.querySelector(".child5");
-
 // Add and remove active class when clicked
 buttons.forEach(button => {
     button.addEventListener("click", function() {
