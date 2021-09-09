@@ -30,7 +30,7 @@ body {
 
 .card {
   width: 328px;
-  height: 500px;
+  min-height: 300px;
   border-radius: 25px;
   padding: 8.31rem 1rem 3rem 1rem;
   background-color: whitesmoke;
@@ -67,6 +67,7 @@ body {
   color: hsl(238, 29%, 16%);
 }
 
+
 .question-container {
   width: 100%;
 }
@@ -99,7 +100,7 @@ body {
   border: none;
 }
 
-.question a, .question button:hover {
+.question button:hover {
   cursor: pointer;
 }
 
