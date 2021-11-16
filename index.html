@@ -3,11 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | FAQ Accordion Card</title>
-
 </head>
 <body>
     <header><!-- FAQ Accordion Card --></header>
@@ -16,7 +14,7 @@
         <section class="desktop-box">
           <img src="./images/illustration-box-desktop.svg" alt="desktop-box">
         </section>
-        <section class="card leftsvg">
+        <section class="leftsvg">
           <img id="line-box" src="./images/bg-pattern-desktop.svg" alt="line-box">
           <img id="illustration" src="./images/illustration-woman-online-mobile.svg" alt="women online mobile">
           <img id="box-shadow" src="./images/bg-pattern-mobile.svg" alt="illustration-shadow">
@@ -29,7 +27,7 @@
           <div class="container">
             <div class="container question">
                 <a href="#" onclick="faq1()">How many team members can I invite?</a>
-                <button onclick="faq1()"></button>
+                <button aria-label="question-1" onclick="faq1()"></button>
             </div>
                 <span class="answer1">
                   <p class="child1">You can invite up to 2 additional users on the Free plan. There is no limit on 
@@ -44,7 +42,7 @@
           <div class="container">
             <div class="container question">
                 <a href="#" onclick="faq2()">What is the maximum file upload size?</a>
-                <button onclick="faq2()"></button>
+                <button aria-label="question-2" onclick="faq2()"></button>
             </div>
                 <span class="answer2">
                   <p class="child2">No more than 2GB. All files in your account must fit your allotted storage space.</p>  
@@ -57,7 +55,7 @@
           <div class="container">
             <div class="question">
                 <a href="#" onclick="faq3()">How do I reset my password?</a>
-                <button onclick="faq3()"></button>
+                <button aria-label="question-3" onclick="faq3()"></button>
             </div>
                 <span class="answer3">
                   <p class="child3">Click “Forgot password” from the login page or “Change password” from your profile page.
@@ -71,7 +69,7 @@
           <div class="container">
             <div class="question">
                 <a href="#" onclick="faq4()">Can I cancel my subscription?</a>
-                <button onclick="faq4()"></button>
+                <button aria-label="question-4" onclick="faq4()"></button>
             </div>
                 <span class="answer4">
                   <p class="child4">Yes! Send us a message and we’ll process your request no questions asked.</p>  
@@ -84,7 +82,7 @@
           <div class="container">
             <div class="container question">
                 <a href="#" onclick="faq5()">Do you provide additional support?</a>
-                <button onclick="faq5()"></button>
+                <button aria-label="question-5" onclick="faq5()"></button>
             </div>
                 <span class="answer5">
                   <p class="child5">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>  
@@ -96,10 +94,10 @@
       </section>
     </main>
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">F</a>.
-  </div>
+  </footer>
   <script src="./app.js"></script>
 </body>
 </html>
