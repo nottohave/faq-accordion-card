@@ -22,7 +22,7 @@ buttons.forEach(button => {
 function faq1() {
     if (ans1.style.display === "none") {
         ans1.style.display = "block";
-        ans1child.style.padding = "0.5rem 0rem 0.3rem 0rem";
+        ans1.children[0].style.padding = "0.5rem 0rem 0.3rem 0rem";
     } else {
         ans1.style.display = "none";
     }
@@ -31,7 +31,7 @@ function faq1() {
 function faq2() {
     if (ans2.style.display === "none") {
         ans2.style.display = "block";
-        ans2child.style.padding = "0.5rem 0rem 0.3rem 0rem";
+        ans2.children[0].style.padding = "0.5rem 0rem 0.3rem 0rem";
     } else {
         ans2.style.display = "none";
     }
@@ -40,7 +40,7 @@ function faq2() {
 function faq3() {
     if (ans3.style.display === "none") {
         ans3.style.display = "block";
-        ans3child.style.padding = "0.5rem 0rem 0.3rem 0rem";
+        ans3.children[0].style.padding = "0.5rem 0rem 0.3rem 0rem";
     } else {
         ans3.style.display = "none";
     }
@@ -58,7 +58,7 @@ function faq4() {
     };
     if (ans4.style.display === "none") {
         ans4.style.display = "block";
-        ans4child.style.padding = "0.5rem 0rem 0.3rem 0rem";
+        ans4.children[0].style.padding = "0.5rem 0rem 0.3rem 0rem";
     } else {
         ans4.style.display = "none";
     }
@@ -67,7 +67,7 @@ function faq4() {
 function faq5() {
     if (ans5.style.display === "none") {
         ans5.style.display = "block";
-        ans5child.style.padding = "0.5rem 0rem 0.3rem 0rem";
+        ans5.children[0].style.padding = "0.5rem 0rem 0.3rem 0rem";
     } else {
         ans5.style.display = "none";
     }
