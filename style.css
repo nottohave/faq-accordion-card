@@ -111,11 +111,19 @@ body {
 
 
 /* answer for each question */
-span {
+.ans1,
+.ans2,
+.ans3,
+.ans4,
+.ans5 {
   display: none;
 }
 
-span p {
+.ans1 p,
+.ans2 p,
+.ans3 p,
+.ans4 p,
+.ans5 p{
   font-family: "Kumbh Regular";
   font-size: 0.75rem;
   color: hsl(240, 6%, 50%);
