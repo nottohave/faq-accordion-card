@@ -1,15 +1,9 @@
-// Declare variables for setting active button and show/display contents
-var buttons = document.querySelectorAll("button");
+const accordion = document.getElementsByClassName("container")
 
 // Add and remove active class when clicked
-buttons.forEach(button => {
-    button.addEventListener("click", function() {
-        buttons.forEach(function(btn) {
-            btn.classList.remove('active');
-        });
-
-        button.classList.add("active");
+for (i = 0; i < accordion.length; i++ ) {
+    accordion[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        console.log(this);
     })
-})
-
-
+}
