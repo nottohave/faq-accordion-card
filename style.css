@@ -20,11 +20,17 @@ html {
   height: auto;
 }
 
+/* COMPONENT */
+/* transition */
+.transition {
+  transition-duration: 500ms;
+}
 
 /* Mobile-view */
 body {
   background: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   background-repeat: no-repeat;
+  background-size: cover;
   padding: 9.2rem 1.44rem 5.25rem;
   min-height: 100vh;
 }
@@ -73,6 +79,10 @@ body {
 .container {
   width: 100%;
   position: relative;
+  margin: 1rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.74);
+
 }
 
 /* arrow down buttons */
@@ -90,6 +100,7 @@ body {
   font-weight: 300;
   color: hsl(237, 12%, 33%);
   text-decoration: none;
+
 }
 
 .container-question::before {
@@ -103,23 +114,23 @@ body {
 .container-question:hover {
   color:hsl(14, 88%, 65%);
   font-size: .95rem;
+
 }
 
-.container-question:focus {
-  font-weight: 500;
+.container.active .container-question {
+  font-family: "Kumbh Bold";
   font-size: .95rem;
+
 }
 
 /* answer for each question */
-.answer {
+.container .answer {
   height: 0;
   overflow: hidden;
-  overflow-y: auto;
 }
 
 .container.active .answer {
-  height: fit-content;
-  transition: 0.5s;
+  height: 4rem;
 }
 
 .answer p {
@@ -127,16 +138,10 @@ body {
   font-size: 0.75rem;
   color: hsl(240, 6%, 50%);
   padding: 0.5rem 0rem 1rem 0rem;
+  line-height: 1.2rem;
 }
 
 /* Thematic break */
-.faq hr {
-  border: 0;
-  border-top: 1px solid hsl(240, 5%, 91%);
-  height: 0;
-  margin: 1rem 0rem 1rem 0rem;
-  width: 100%;
-}
 
 .attribution {
   font-size: 11px;
@@ -153,13 +158,13 @@ body {
   body {
     padding: 8.25rem 15rem;
   }
+
   main {
     width: 918px;
     height: 511px;
   }
   .card {
     width: auto;
-    height: 513px;
     padding: 4.375rem 5rem 3rem 1rem;
     z-index: 2;
     display: flex;
@@ -184,7 +189,6 @@ body {
 
   .faq {
     width: 452px;
-    height: 420px;
     padding-left: 4rem;
   }
 
