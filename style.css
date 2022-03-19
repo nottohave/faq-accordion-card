@@ -71,6 +71,7 @@ body {
 
 .container {
   width: 100%;
+  position: relative;
 }
 
 /* arrow down buttons */
@@ -79,7 +80,9 @@ body {
   justify-content: space-between;
 }
 
-.question a {
+/* question label */
+.container-question {
+  position: relative;
   font-family: "Kumbh Regular";
   font-size: 0.9rem;
   font-weight: 300;
@@ -87,32 +90,37 @@ body {
   text-decoration: none;
 }
 
-.question a:focus {
-  font-family: "Kumbh Bold";
-  font-weight: 400;
-}
-
-.question button {
-  align-self: center;
-  background-image: url(./images/icon-arrow-down.svg);
+.container-question::before {
+  content: url(./images/icon-arrow-down.svg);
   width: 10px;
   height: 8px;
-  right: 15%;
+  right: 10px;
   border: none;
+  transform: translateY(-50%);
+  top: 50%;
 }
 
-.question button:hover {
-  cursor: pointer;
-}
 
-.question a:hover {
-  color: hsl(14, 88%, 65%);
+.container-question:hover {
+  color:hsl(14, 88%, 65%);
+  font-size: .95rem;
 }
 
 
 /* answer for each question */
 .answer {
-  display: none;
+  position: relative;
+  background: #fff;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+
+}
+
+.container .answer.active {
+  height: 100px;
+
 }
 
 .answer p {
